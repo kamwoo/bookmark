@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title%}Bookmart Update{% endblock %}
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Update" class="btn btn-info btn-sm">
+</form>
+#action은 어느 페이지로 보내서 처리를 할 것 이냐, 장고에서는 현재 페이지에서 해서 비워둔다.
+{% endblock %}
